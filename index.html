@@ -4,45 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bread</title>
-
+    <!-- hii !! -->
     <meta property="og:image" content="https://bread.happyllama25.net/bread.jpg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bread.happyllama25.net/">
 
     <style>
         body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color:white;
-            font-family: comic sans ms;
-            background-image: url('bread.jpg');
+            margin: 0;
+            padding: 0;
+            background-image: url('bread.png');
             background-size: 100px 100px;
             background-repeat: repeat;
-            animation: moveBread 25s linear infinite;
+            animation: moveBread 60s linear infinite;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        img {
-            max-width: 90%;
+        video {
+            position: relative;
+            width: 80%;
+            max-width: 700px;
+            height: auto;
         }
+
+
         @keyframes moveBread {
             0% {
-                background-position: 0 0;
+                background-position: 100vw 100vw;
             }
             100% {
-                background-position: 100vw 100vh;
+                background-position: 0vw 50vh;
             }
         }
     </style>
 </head>
 <body>
-    <h1>waiting for bread...</h1>
-    <h2>heres a cat, instead!</h2>
-    <audio controls autoplay loop>
-        <source src="elevatorMusic.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-    <h2>BRO THIS CAT IS SO HIGH RESOLUTION ITS LAGGIN</h2>
-    <img src="bread.jpg" alt="bread. a cat, for now">
-</body>
+    <video controls loop>
+        <source src="bread.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </body>
 </html>
